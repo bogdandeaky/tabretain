@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to download all PDFs on a web page at once</title><meta name="description" content="Need every PDF linked from a page? Ways to download all PDFs at once: manual saving, the wget command, and a one-click browser extension that keeps readable file names.">
+<link rel="canonical" href="https://bogdandeaky.github.io/tabretain/download-all-pdfs-on-a-page.html"><link rel="stylesheet" href="site.css">
+<meta property="og:type" content="website"><meta property="og:title" content="How to download all PDFs on a web page at once">
+<meta property="og:description" content="Need every PDF linked from a page? Ways to download all PDFs at once: manual saving, the wget command, and a one-click browser extension that keeps readable file names."><meta property="og:url" content="https://bogdandeaky.github.io/tabretain/download-all-pdfs-on-a-page.html">
+</head><body><header><a href="./" class="home">Small, private browser tools</a></header><main>
+<h1>How to download all PDFs on a web page at once</h1>
+<p>Course pages, council minutes, product manuals and reports often link dozens of PDFs. Clicking each one is slow. Here are your options.</p>
+<h2>1. One by one (fine for a few files)</h2>
+<p>Right-click a link → <b>Save link as…</b>. Good for 3–5 files. Beyond that it gets tedious, and many files arrive with names like <code>download(7).pdf</code>.</p>
+<h2>2. The command line (for technical users)</h2>
+<p>With <code>wget</code> installed you can fetch every PDF linked from one page:</p>
+<pre>wget -r -l1 -nd -A pdf https://example.com/page</pre>
+<p>This does not work for pages that need you to be logged in, or that build their links with JavaScript, unless you add cookies and extra options.</p>
+<h2>3. A browser extension (easiest)</h2>
+<p>An extension works inside the page you already have open, so it sees the same links you do, including after you log in. Look for one that lets you choose which files to download, rather than grabbing everything.</p>
+<h2>Be fair to the site</h2>
+<p>Only download files you are allowed to use, and avoid hammering a site with hundreds of requests at once.</p>
+<aside class="cta"><h2>DocGrab</h2><p>Lists every PDF, Word, Excel, PowerPoint and CSV link on the page you are on. Tick what you want and it saves them in one go, with readable file names. Free, no account, no data collected.</p>
+<p><a class="btn" href="https://chromewebstore.google.com/detail/docgrab-download-all-pdfs/fmabhinlhlfldepekcbanepkiejmiapp" rel="noopener">Add to Chrome — free</a></p>
+<p class="mut">Microsoft Edge and Firefox versions are coming soon. <a href="docgrab-privacy.html">Privacy policy</a></p></aside>
+</main><footer><a href="./">All tools and guides</a> · <a href="privacy.html">TabRetain privacy</a> · <a href="docgrab-privacy.html">DocGrab privacy</a> · Contact: <a href="mailto:apps@bluemind-software.ro">apps@bluemind-software.ro</a></footer></body></html>
